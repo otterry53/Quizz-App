@@ -5,41 +5,41 @@
     <meta charset="UTF-8">
     <title>Quiz App</title>
     <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" src="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <!--<img src="images/bookbackground.jpg">-->
+        <img src="images/openbook.jpg" width=800px height=500px>
         <h1>What's in a Name?</h1>
         <h2 class="text">Can you pick out the fakes?</h2>
         <p class="text"></p>
         <button class="start-button" id="startQuizButton">Start</button>
     </header>
-    <section class="start-section" style="display: block;" img src="images/openbook.jpg">
-        <section class="quiz-section" style="display: none;">
-            <div id="question_wrapper">
-                <h1 class="text" id="question">Which of the following is not an actual title?</h1>
-                <div id="choices">
-                    <input class="option" type="radio" value="0" name="option">
-                    <br>
-                    <input class="option" type="radio" value="1" name="option">
-                    <br>
-                    <input class="option" type="radio" value="2" name="option">
-                    <br>
-                    <input class="option" type="radio" value="2" name="option">
-                    <br>
-                    <input class="option" type="radio" value="2" name="option">
-                    <br>
-                </div>
+    <section class="start-section" style="display: none;">
+        <img src="images/openbook.jpg" width=800px height=500px>
+        <div id="question_wrapper">
+            <h1 class="text" id="question">Do I need a placeholder?</h1>
+            <div id="choices">
+                <input class="option" type="radio" value="0" name="option">
+                <br>
+                <input class="option" type="radio" value="1" name="option">
+                <br>
+                <input class="option" type="radio" value="2" name="option">
+                <br>
+                <input class="option" type="radio" value="3" name="option">
+                <br>
+                <input class="option" type="radio" value="4" name="option">
+                <br>
             </div>
-            <div class="question-number" id="questionNum">Question 1 of 5</div>
-        </section>
+        </div>
+        <div class="question-number" id="questionNum">Question 1 of 10</div>
+    </section>
     </section>
 
     <section class="result-section" style="display: none;">
         <h2 class="text"> Final Score </h2>
-        <h3 class="text" id="finalScore">5/5</h3>
+        <h3 class="text" id="finalScore">10/10</h3>
         <div id="result_msg"></div>
         <button class="start-button" id="tryagain">Try Again</button>
     </section>
