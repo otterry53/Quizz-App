@@ -14,105 +14,102 @@
 //Display the correct answer if the user guessed incorrectly
 //Display some information related to the correct answer
 
+
+
 $(document).ready(function () {
+
 
     /*--- Questions Variable ---*/
     var questions = [
-//Question 1
+        //Question 1
         {
-            question: 'Which is not the title of a play written by William Shakespeare?',
-            choices: ['Much Ado About Nothing', 'King Lear', 'Othello', 'Two Gentlemen of Venice', 'Richard the III'],
-            correct: 3,
-            correctDetails: 'The actual title is "Two Gentlemen of Verona".'
-        },
-//Question 2
-        {
-            question: 'Which is not the subtitle of a movie based on J.R. Tolkiens "The Hobbit" and "Lord of the Rings" books?',
+            question: 'Which is not the subtitle of a movie based on J.R. Tolkiens "The Hobbit/Lord of the Rings" trilogy?',
             choices: ['The Desolation of Smaug', 'The Fellowsihp of the Ring', 'The Brotherhood', 'The Two Towers', 'The Return of the King'],
             correct: 2,
-            correctDetails: 'The Brotherhood was not a subtitle in this series.'
+            questionImage: '../images/lordrings.jpg',
+            correctDetails: '"The Brotherhood" was not a subtitle in the movie version of The Hobbit/Lord of the Rings triology.'
         },
-//Question 3
+        //Question 2
+        {
+            question: 'Which is not the title of a play written by William Shakespeare?',
+            choices: ['Perseus', 'Much Ado About Nothing', 'King Lear', 'Othello', 'Richard the III'],
+            correct: 0,
+            questionImage: '../images/Shakespeare.jpg',
+            correctDetails: 'Shakespeare wrote a play entitle "Pericles". Perseus is the son of Zeus in Greek Mythology.'
+        },
+        //Question 3
         {
             question: 'Which is not the title of a book or poem written by Edgar Allen Poe?',
             choices: ['The Raven', 'The Oblong Box', 'The Pit and the Pendulum', 'The Mockingjay', 'The Tell-Tale Heart'],
             correct: 3,
-            correctDetails: 'Mockingjay is a title in "The Hunger Games" Trilogy.'
+            questionImage: '../images/EAPoe.jpg',
+            correctDetails: 'Mockingjay is a title in "The Hunger Games" Trilogy, not an Edgar Allen Poe novel.'
         },
-//Question 4
+        //Question 4
         {
             question: 'Which is not a title in the "Song of Ice and Fire" series by George R.R.Martin?',
-            choices: ['A Game of Thrones', 'Death of Kings and Princes', 'A Storm of Swords', 'A Feast for Crows', 'A Clash of Kings'],
+            choices: ['A Game of Thrones', 'A Mother of Dragons', 'A Storm of Swords', 'A Feast for Crows', 'A Clash of Kings'],
             correct: 1,
-            correctDetails: '"A Mother of Dragons" is not a title in this series.'
+            questionImage: '../images/thrones.jpg',
+            correctDetails: "'A Mother of Dragons' is not a title in George R.R. Martin's 'Song of Ice and Fire' series."
         },
 
-//Question 5
+        //Question 5
         {
-            question: 'Which is not the second half of a "Harry Potter and the ..."  series book title?',
+            question: 'Which is not the second half of a "Harry Potter and the. . ."  series book title?',
             choices: ['Chamber of Secrets', 'Prison of Askaban', 'Chalice of Gold', 'Order of the Phoenix', 'Half-Blood Prince'],
             correct: 2,
-            correctDetails: '"Harry Potter and the Chalice of Gold" is not a title in the series.'
+            questionImage: '../images/sorcerors-stone.jpg',
+            correctDetails: 'Chalice of Gold is not a title in the Harry Potter series.'
         },
-//Question 6
+        //Question 6
         {
-            question: 'Which is not the title of a book "The Girl ..." series by Steig Larsson?',
-            choices: ["...with the Dragon Tattoo", "...Who Played with Fire", "...Who Danced with Demons", "...Who Kicked the Hornet's Nest", "The Girl in the Spider's Web"],
+            question: 'Which is not part of the title of a book in "The Girl . . ." Millenium Triology by Steig Larsson?',
+            choices: ['...with the Dragon Tattoo', '...who Played with Fire', '...who Leapt Through Time', '...Who Kicked the Hornets Nest', '...in the Spiders Web'],
             correct: 2,
-            correctDetails: "'The Girl who Danced with Demons' is not a title in this series.'"
+            questionImage: '../images/dragontattoo.jpg',
+            correctDetails: 'The Girl Who Leapt Through Time is a science fiction novel by Yasutaka Tsutsui.'
         },
-//Question 7
+        //Question 7
         {
             question: 'Which title was not a book written by Theodore Seuss Geisel a-k-a Dr.Seuss?',
-            choices: ['Maybe You Could Get a Pet', 'Green Eggs and Ham', "Daisy Headed Maisy", "Oh, the Places You'll Go", "The Lorax"],
-            correct: 2,
-            correctDetails: "The actual title item 0 is 'Maybe You Could Be a Vet.'"
+            choices: ['Your Parachute is Red and Blue', 'Green Eggs and Ham', 'Daisy Headed Maisy', 'Oh, the Places Youll Go', 'The Lorax'],
+            correct: 0,
+            questionImage: '../images/Cat-in-the-hat.jpg',
+            correctDetails: 'The actual title of the Dr. Seusss book about life passions is "Maybe You Could Be a Vet".'
         },
-//Question 8
-        {
-            question: 'Which of these titles is not an actual title in the Robert Ludlum Jason Bourne Series?',
-            choices: ['The Bourne Identity', 'The Bourne Supremacy', 'The Bourne Ultimatum', 'The Bourne Killer', 'The Bourne Betrayal'],
-            correct: 3,
-            correctDetails: 'Natural Born Killers is the title of a screenplay by Quentin Tarantino.'
-        },
-//Question 9
+        //Question 8
         {
             question: 'Which of these is not the title of a book written by Ernest Hemingway?',
-            choices: ['Moby Dick', 'A Farewell to Arms', 'For Whom the Bell Tolls', 'A Moveable Feast', 'To Have and Have Not'],
+            choices: ['A Farewell to Arms', 'For Whom the Bell Tolls', 'A Moveable Feast', 'To Have and Have Not', 'Moby Dick'],
             correct: 0,
+            questionImage: '../images/oldmansea.jpg',
             correctDetails: 'Moby Dick is a novel written by Herman Melville. Hemingway wrote "The Old Man and the Sea".'
-        },
-
-//Question 10
-        {
-            question: '',
-            choices: [''],
-            correct: 0,
-            correctDetails: ''
         }
-    ];
-
-
+        ];
     /*--- Result Message Variable ---*/
     var feedback = "Well Done";
 
-
     /*--- Variables ---*/
+    var imageNum = 0;
     var questionNum = 0;
     var questionTotal = questions.length;
     var correctTotal = 0;
-
-
 
     /*--- Hide quiz and result section on load ---*/
     $('.quiz-section').hide();
     $('.result-section').hide();
 
+
+
     /*--- Display Questions Function ---*/
     function questionDisplay() {
         //displays the current question
+
         $('#questionNum').text("Question " + (questionNum + 1) + " of " + questionTotal);
         $('#question').text(questions[questionNum].question);
+        $('#image_wrapper').empty();
+        $('#image_wrapper').append("<img src=" + questions[questionNum].questionImage + " class='question-image'>");
         $('#choices').empty();
         var choiceTotal = questions[questionNum].choices.length;
         for (var i = 0; i < choiceTotal; i++) {
@@ -120,8 +117,6 @@ $(document).ready(function () {
             $('#choices').append("<input type='radio' class='option' name='option' value=" + i + ">" + questions[questionNum].choices[i] + "<br>");
         }
     }
-
-
     /*--- On start quiz ---*/
 
     $('#startQuizButton').click(function () { //start the quiz and show the first question
@@ -130,22 +125,23 @@ $(document).ready(function () {
         $('.quiz-section').show();
         //empty the result details container
         $('#result_msg').empty();
+
         questionDisplay();
     });
 
 
     /*--- Show quiz questions ---*/
     $('.quiz-section').on('click', '.option', function () {
-
         var answer = $("input[class='option']:checked").val();
         var correctAnswer = questions[questionNum].correct;
         if (answer == correctAnswer) {
             //if correct answer was selected
             correctTotal++;
-            //console.log(correctTotal);
         }
+        //console.log(correctTotal);
         $('#result_msg').append("<h3>Q: " + questions[questionNum].question + "</h3>");
         $('#result_msg').append("<h4>A: " + questions[questionNum].correctDetails + "</h4>");
+
 
 
         //quiz is finished, show result-section
@@ -163,10 +159,7 @@ $(document).ready(function () {
             questionNum++;
             questionDisplay();
         }
-
     });
-
-
 
 
     /*--- Load the start section from the result section ---*/
