@@ -26,7 +26,8 @@ $(document).ready(function () {
             question: 'Which is not the subtitle of a movie based on J.R. Tolkiens "The Hobbit/Lord of the Rings" trilogy?',
             choices: ['The Desolation of Smaug', 'The Fellowsihp of the Ring', 'The Brotherhood', 'The Two Towers', 'The Return of the King'],
             correct: 2,
-            questionImage: '../images/lordrings.jpg',
+            questionImage: "https://i.ytimg.com/vi/0B8C2MkkEqI/maxresdefault.jpg",
+            alt: '../images/lordrings.jpg',
             correctDetails: '"The Brotherhood" was not a subtitle in the movie version of The Hobbit/Lord of the Rings triology.'
         },
         //Question 2
@@ -34,7 +35,8 @@ $(document).ready(function () {
             question: 'Which is not the title of a play written by William Shakespeare?',
             choices: ['Perseus', 'Much Ado About Nothing', 'King Lear', 'Othello', 'Richard the III'],
             correct: 0,
-            questionImage: '../images/Shakespeare.jpg',
+            questionImage: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Title_page_William_Shakespeare's_First_Folio_1623.jpg",
+            alt: '../images/Shakespeare.jpg',
             correctDetails: 'Shakespeare wrote a play entitle "Pericles". Perseus is the son of Zeus in Greek Mythology.'
         },
         //Question 3
@@ -42,7 +44,8 @@ $(document).ready(function () {
             question: 'Which is not the title of a book or poem written by Edgar Allen Poe?',
             choices: ['The Raven', 'The Oblong Box', 'The Pit and the Pendulum', 'The Mockingjay', 'The Tell-Tale Heart'],
             correct: 3,
-            questionImage: '../images/EAPoe.jpg',
+            questionImage: "http://images.fineartamerica.com/images-medium-large/the-ravens-edgar-allen-poe-thomas-pearce.jpg",
+            alt: '../images/EAPoe.jpg',
             correctDetails: 'Mockingjay is a title in "The Hunger Games" Trilogy, not an Edgar Allen Poe novel.'
         },
         //Question 4
@@ -50,7 +53,8 @@ $(document).ready(function () {
             question: 'Which is not a title in the "Song of Ice and Fire" series by George R.R.Martin?',
             choices: ['A Game of Thrones', 'A Mother of Dragons', 'A Storm of Swords', 'A Feast for Crows', 'A Clash of Kings'],
             correct: 1,
-            questionImage: '../images/thrones.jpg',
+            questionImage: "https://i.kinja-img.com/gawker-media/image/upload/lfk6awzsbwti0et0rglx.jpg",
+            alt: '../images/thrones.jpg',
             correctDetails: "'A Mother of Dragons' is not a title in George R.R. Martin's 'Song of Ice and Fire' series."
         },
 
@@ -59,7 +63,8 @@ $(document).ready(function () {
             question: 'Which is not the second half of a "Harry Potter and the. . ."  series book title?',
             choices: ['Chamber of Secrets', 'Prison of Askaban', 'Chalice of Gold', 'Order of the Phoenix', 'Half-Blood Prince'],
             correct: 2,
-            questionImage: '../images/sorcerors-stone.jpg',
+            questionImage: "http://vignette2.wikia.nocookie.net/harrypotter/images/a/a0/The_Stone.png/revision/latest?cb=20150115120607",
+            alt: '../images/Sorcerersstone.png',
             correctDetails: 'Chalice of Gold is not a title in the Harry Potter series.'
         },
         //Question 6
@@ -67,7 +72,8 @@ $(document).ready(function () {
             question: 'Which is not part of the title of a book in "The Girl . . ." Millenium Triology by Steig Larsson?',
             choices: ['...with the Dragon Tattoo', '...who Played with Fire', '...who Leapt Through Time', '...Who Kicked the Hornets Nest', '...in the Spiders Web'],
             correct: 2,
-            questionImage: '../images/dragontattoo.jpg',
+            questionImage: "https://lmiall.files.wordpress.com/2014/01/girl_with_the_dragon_tattoo.jpg",
+            alt: '../images/dragontattoo.jpg',
             correctDetails: 'The Girl Who Leapt Through Time is a science fiction novel by Yasutaka Tsutsui.'
         },
         //Question 7
@@ -75,7 +81,8 @@ $(document).ready(function () {
             question: 'Which title was not a book written by Theodore Seuss Geisel a-k-a Dr.Seuss?',
             choices: ['Your Parachute is Red and Blue', 'Green Eggs and Ham', 'Daisy Headed Maisy', 'Oh, the Places Youll Go', 'The Lorax'],
             correct: 0,
-            questionImage: '../images/Cat-in-the-hat.jpg',
+            questionImage: "http://img02.deviantart.net/e4f0/i/2012/059/b/d/the_cat_in_the_hat_by_odogg31-d4rbrmf.jpg",
+            alt: '../images/Cat-in-the-hat.jpg',
             correctDetails: 'The actual title of the Dr. Seusss book about life passions is "Maybe You Could Be a Vet".'
         },
         //Question 8
@@ -83,7 +90,8 @@ $(document).ready(function () {
             question: 'Which of these is not the title of a book written by Ernest Hemingway?',
             choices: ['A Farewell to Arms', 'For Whom the Bell Tolls', 'A Moveable Feast', 'To Have and Have Not', 'Moby Dick'],
             correct: 0,
-            questionImage: '../images/oldmansea.jpg',
+            questionImage: "http://3.bp.blogspot.com/-RAdqjKCAJlY/UdDYPg5nQ-I/AAAAAAAAA1M/1jLj00VA5v4/s900/old-mans-battle-carey-chen.jpg",
+            alt: '..images/oldmansea.jpg',
             correctDetails: 'Moby Dick is a novel written by Herman Melville. Hemingway wrote "The Old Man and the Sea".'
         }
         ];
