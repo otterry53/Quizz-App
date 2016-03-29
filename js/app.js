@@ -24,11 +24,11 @@ $(document).ready(function () {
         //Question 1
         {
             question: 'Which is not the subtitle of a movie based on J.R. Tolkiens "The Hobbit/Lord of the Rings" trilogy?',
-            choices: ['The Desolation of Smaug', 'The Fellowsihp of the Ring', 'The Brotherhood', 'The Two Towers', 'The Return of the King'],
+            choices: ['The Desolation of Smaug', 'The Fellowsihp of the Ring', 'The Ring', 'The Two Towers', 'The Return of the King'],
             correct: 2,
             questionImage: "https://i.ytimg.com/vi/0B8C2MkkEqI/maxresdefault.jpg",
             alt: '../images/lordrings.jpg',
-            correctDetails: '"The Brotherhood" was not a subtitle in the movie version of The Hobbit/Lord of the Rings triology.'
+            correctDetails: '"The Ring" is a 2002 supernatural psychological horror film, based on a novel by Koji Suzuki.'
         },
         //Question 2
         {
@@ -46,7 +46,7 @@ $(document).ready(function () {
             correct: 3,
             questionImage: "http://images.fineartamerica.com/images-medium-large/the-ravens-edgar-allen-poe-thomas-pearce.jpg",
             alt: '../images/EAPoe.jpg',
-            correctDetails: 'Mockingjay is a title in "The Hunger Games" Trilogy, not an Edgar Allen Poe novel.'
+            correctDetails: '"Mockingjay" is a title in "The Hunger Games" Trilogy, not an Edgar Allen Poe novel.'
         },
         //Question 4
         {
@@ -55,17 +55,17 @@ $(document).ready(function () {
             correct: 1,
             questionImage: "https://i.kinja-img.com/gawker-media/image/upload/lfk6awzsbwti0et0rglx.jpg",
             alt: '../images/thrones.jpg',
-            correctDetails: "'A Mother of Dragons' is not a title in George R.R. Martin's 'Song of Ice and Fire' series."
+            correctDetails: 'Mother of Dragons refers to a character in the series by George R. R. Martin.'
         },
 
         //Question 5
         {
             question: 'Which is not the second half of a "Harry Potter and the. . ."  series book title?',
-            choices: ['Chamber of Secrets', 'Prison of Askaban', 'Chalice of Gold', 'Order of the Phoenix', 'Half-Blood Prince'],
+            choices: ['Chamber of Secrets', 'Prison of Askaban', 'Poisoned Chalice', 'Order of the Phoenix', 'Half-Blood Prince'],
             correct: 2,
             questionImage: "http://vignette2.wikia.nocookie.net/harrypotter/images/a/a0/The_Stone.png/revision/latest?cb=20150115120607",
             alt: '../images/Sorcerersstone.png',
-            correctDetails: 'Chalice of Gold is not a title in the Harry Potter series.'
+            correctDetails: '"The Poisoned Chalice is the subtitle of a "Star Trek: The Fall" series.'
         },
         //Question 6
         {
@@ -79,11 +79,11 @@ $(document).ready(function () {
         //Question 7
         {
             question: 'Which title was not a book written by Theodore Seuss Geisel a-k-a Dr.Seuss?',
-            choices: ['Your Parachute is Red & Blue', 'Green Eggs and Ham', 'Daisy Headed Maisy', 'Oh, the Places Youll Go', 'The Lorax'],
+            choices: ['Your Parachute is Red & Green', 'Green Eggs and Ham', 'Daisy Headed Maisy', 'Oh, the Places Youll Go', 'The Lorax'],
             correct: 0,
             questionImage: "http://img02.deviantart.net/e4f0/i/2012/059/b/d/the_cat_in_the_hat_by_odogg31-d4rbrmf.jpg",
             alt: '../images/Cat-in-the-hat.jpg',
-            correctDetails: 'The actual title of the Dr. Seusss book about life passions is "Maybe You Could Be a Vet".'
+            correctDetails: 'The actual title of the Dr. Seusss book about occupations is "Maybe You Could Be a Vet".'
         },
         //Question 8
         {
@@ -92,7 +92,25 @@ $(document).ready(function () {
             correct: 0,
             questionImage: "http://3.bp.blogspot.com/-RAdqjKCAJlY/UdDYPg5nQ-I/AAAAAAAAA1M/1jLj00VA5v4/s900/old-mans-battle-carey-chen.jpg",
             alt: '..images/oldmansea.jpg',
-            correctDetails: 'Moby Dick is a novel written by Herman Melville. Hemingway wrote "The Old Man and the Sea".'
+            correctDetails: '"Moby Dick" is a novel written by Herman Melville. Hemingway wrote "The Old Man and the Sea".'
+        },
+        //Question 9
+        {
+            question: 'Which of these is not the title of a book written by Charles Dickens?',
+            choices: ['A Tale of Two Cities', 'Great Expectations', 'Hunchback of Notre Dame', 'Oliver Twist', 'David Copperfield'],
+            correct: 2,
+            questionImage: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRksVJ3kUcOrgrQJvs0rbJPYRd8JP5DKTfq9IsKvCF7jJK2KY8",
+            alt: '..images/dickens.jpg',
+            correctDetails: 'The Hunchback of Notre Dame is a French romantic gothic novel written by Victor Hugo.'
+        },
+        //Question 10
+        {
+            question: 'Which of these is not the title in the Robert Ludlum Jason Bourne series?',
+            choices: ['Bourne Identity', 'Bourne Supremacy', 'Bourne Ultimatum', 'Bourne Free', 'Bourne Betrayal'],
+            correct: 0,
+            questionImage: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Dw7nxNTyn8v2mZSUjHa6opZ_x8aCDWOzOnc68tEUFIQMB2onag",
+            alt: '..images/bourne.jpg',
+            correctDetails: 'Born Free is a 1960 non-fiction book about a real-life couple who raised Elsa the Lioness.'
         }
         ];
     /*--- Result Message Variable ---*/
