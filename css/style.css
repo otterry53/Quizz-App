@@ -1,231 +1,240 @@
-                        /* CSS reset
+    /* CSS reset
 (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
-                    * {
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font-size: 100%;
-                        /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
-                        box-sizing: border-box;
-                        /*reset Chrome user agent styles*/
-                        -webkit-margin-before: 0px;
-                        -webkit-margin-after: 0px;
-                        -webkit-margin-start: 0px;
-                        -webkit-margin-end: 0px;
-                        -webkit-padding-before: 0px;
-                        -webkit-padding-after: 0px;
-                        -webkit-padding-start: 0px;
-                        -webkit-padding-end: 0px;
-                    }
-                    /* General styles
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* General styles
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-                    html {
-                        background: url("../images/bookbackground.jpg") no-repeat center center fixed;
-                        -webkit-background-size: cover;
-                        -moz-background-size: cover;
-                        -o-background-size: cover;
-                        background-size: cover;
-                    }
+html {
+    background: url("../images/bookbackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-                    p {
-                        text-align: center;
-                    }
+p {
+    text-align: center;
+}
 
-                    body {
-                        background-size: 50%;
-                        height: 5rem;
-                        text-align: center;
-                        font-family: 'EB Garamond', sans-serif;
-                        font-size: 1.5rem;
-                        color: #FF4242;
-                    }
+body {
+    background-size: 50%;
+    height: 5rem;
+    text-align: center;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 1.5rem;
+    color: #FF4242;
+}
 
-                    section {
-                        background: url("../images/openbook.png") no-repeat center;
-                        width: 800px;
-                        height: 500px;
-                        padding-top: 1rem;
-                        margin-top: 9rem;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
+section {
+    background: url("../images/openbook.png") no-repeat center;
+    width: 800px;
+    height: 500px;
+    padding-top: 1rem;
+    margin-top: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-                    .text {
-                        color: #FF4242;
-                        padding-bottom: 1rem;
-                    }
-                    /* Header styles
+.text {
+    color: #FF4242;
+    padding-bottom: 1rem;
+}
+
+
+/* Header styles
 (all the styles inside the < header > or < nav > tags)
 */
 
-                    .start-section {
-                        color: red;
-                    }
+.start-section {
+    color: red;
+}
 
-                    .start-section h1 {
-                        margin-top: 3rem;
-                        font-size: 4rem;
-                    }
+.start-section h1 {
+    margin-top: 3rem;
+    font-size: 4rem;
+}
 
-                    .start-section h2 {
-                        font-size: 3rem;
-                    }
+.start-section h2 {
+    font-size: 3rem;
+}
 
-                    .start-section .start-button {
-                        margin-top: 1rem;
-                        font-family: 'EB Garamond', sans-serif;
-                        background-color: #DEB887;
-                        border-radius: 20px;
-                        border-style: none;
-                        font-size: 2.5rem;
-                        padding: .2srem 1.5rem;
-                        text-shadow: none;
-                        width: 9.688rem;
-                        color: #DC143C;
-                    }
+.start-section .start-button {
+    margin-top: 1rem;
+    font-family: 'EB Garamond', sans-serif;
+    background-color: #DEB887;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 2.5rem;
+    padding: .2srem 1.5rem;
+    text-shadow: none;
+    width: 9.688rem;
+    color: #FF4242;
+}
 
-                    .start-section .start-button: hover {
-                        background-color: #A0522D;
-                    }
-                    /* Content styles
+.start-section .start-button: hover {
+    background-color: #A0522D;
+}
+
+
+/* Content styles
 (all the styles inside the < sections > or < aside > tags)
 */
-                    /*styles for image and question wrappers*/
 
-                    .quiz-section {
-                        height: 500px;
-                        width: 800px;
-                    }
 
-                    .quiz-section #image_wrapper {
-                        margin-top: 3rem;
-                        margin-left: 4rem;
-                        float: left;
-                        height: 420px;
-                        width: 280px;
-                    }
+/*styles for image and question wrappers*/
 
-                    #image_wrapper img {
-                        width: 255px;
-                        height: 355px;
-                        margin-left: 1.5rem;
-                    }
+.quiz-section {
+    height: 500px;
+    width: 800px;
+}
 
-                    .quiz-section #question_wrapper {
-                        margin-top: 3rem;
-                        margin-right: 3.2rem;
-                        float: right;
-                        height: 420px;
-                        width: 300px;
-                        font-size: 17px;
-                        text-align: left;
-                    }
+.quiz-section #image_wrapper {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    float: left;
+    height: 420px;
+    width: 280px;
+}
 
-                    .quiz-section .question-number {
-                        margin-bottom: 2rem;
-                        text-align: center;
-                        font-size: 20px;
-                        color: #FF4141;
-                        padding-right: 1rem;
-                        padding-top: .5rem;
-                    }
+#image_wrapper img {
+    width: 255px;
+    height: 355px;
+    margin-left: 1.5rem;
+}
 
-                    .quiz-section h1 {
-                        margin-left: .4rem;
-                        margin-right: .8rem;
-                    }
+.quiz-section #question_wrapper {
+    margin-top: 3rem;
+    margin-right: 3.2rem;
+    float: right;
+    height: 420px;
+    width: 300px;
+    font-size: 17px;
+    text-align: left;
+}
 
-                    .quiz-section #choices {
-                        color: #ff4141;
-                        margin-left: 1rem;
-                        margin-right: 2.5rem;
-                        text-align: left;
-                        width: 80%;
-                    }
+.quiz-section .question-number {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 20px;
+    color: #FF4141;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
 
-                    .quiz-section #choices input.option {
-                        margin-right: 1rem;
-                    }
+.quiz-section h1 {
+    margin-left: .4rem;
+    margin-right: .8rem;
+}
 
-                    .result-section h2 {
-                        margin-top: 0.9rem;
-                        font-size: 18px;
-                    }
+.quiz-section #choices {
+    color: #ff4141;
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+    text-align: left;
+    width: 80%;
+}
 
-                    .result-section h3 {
-                        margin-top: 0rem;
-                        font-size: 18px;
-                    }
+.quiz-section #choices input.option {
+    margin-right: 1rem;
+}
 
-                    .result-section #result_msg {
-                        height: 20rem;
-                        overflow-y: scroll;
-                        overflow-x: auto;
-                    }
+.result-section h2 {
+    margin-top: 0.9rem;
+    font-size: 18px;
+}
 
-                    .result-section #result_msg h3,
-                    .result-section #result_msg h4 {
-                        text-align: left;
-                        margin-left: 4.5rem;
-                        font-size: 1rem;
-                        color: #DEB887;
-                        font-weight: 400;
-                    }
+.result-section h3 {
+    margin-top: 0rem;
+    font-size: 18px;
+}
 
-                    .result-section #result_msg h3 {
-                        margin-top: 5px;
-                    }
+.result-section #result_msg {
+    height: 20rem;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
 
-                    .result-section #result_msg h4 {
-                        color: red;
-                        margin-left: 5rem;
-                        font-size: 1rem;
-                        margin-top: -1px;
-                    }
+.result-section #result_msg h3,
+.result-section #result_msg h4 {
+    text-align: left;
+    margin-left: 4.5rem;
+    font-size: 1rem;
+    color: #DEB887;
+    font-weight: 400;
+}
 
-                    .result-section #tryagain {
-                        margin-top: 20px;
-                        font-family: 'EB Garamond', sans-serif;
-                        background-color: #DEB887;
-                        border-radius: 20px;
-                        border-style: none;
-                        font-size: 2rem;
-                        padding: .2srem 1.5rem;
-                        text-shadow: none;
-                        width: 15rem;
-                        color: #DC143C;
-                    }
-                    /* Footer styles
+.result-section #result_msg h3 {
+    margin-top: 5px;
+}
+
+.result-section #result_msg h4 {
+    color: red;
+    margin-left: 5rem;
+    font-size: 1rem;
+    margin-top: -1px;
+}
+
+.result-section #tryagain {
+    margin-top: 20px;
+    font-family: 'EB Garamond', sans-serif;
+    background-color: #DEB887;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 2rem;
+    padding: .2srem 1.5rem;
+    text-shadow: none;
+    width: 15rem;
+    color: #DC143C;
+}
+
+
+/* Footer styles
 (all the styles inside the < footer > tag)
 */
-                    /* Responsive styles
+
+
+/* Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
-                    /*ipad lanscape / small laptop*/
 
-                    @media only screen and (max-width: 1024px) {
-                        body {
-                            color: blue;
-                        }
-                    }
-                    /*ipad portrait*/
 
-                    @media only screen and (max-width: 768px) {
-                        body {
-                            color: yellow;
-                        }
-                    }
-                    /*iPhone landscape*/
+/*ipad lanscape / small laptop*/
 
-                    @media only screen and (max-width: 480px) {
-                        body {
-                            color: green;
-                        }
-                        /* section {
+@media only screen and (max-width: 1024px) {
+    body {
+        color: blue;
+    }
+}
+
+
+/*ipad portrait*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        color: yellow;
+    }
+    section {
         background: url("../images/openbook.png") no-repeat center;
         width: 470px;
         height: 375px;
@@ -264,41 +273,107 @@
     .quiz-section h1 {
         font-size: 10px;
     }
-}
-
-.quiz-section #choices {
-    margin-left: .5rem;
-    margin-right: 1rem;
-    width: 105%;
-    font-size: 10px;
-}
-
-.result-section #result_msg {
-    height: 16rem;
-}
-
-.result-section #result_msg h3,
-.result-section #result_msg h4 {
-    margin-left: 2rem;
-}
-
-.result-section #result_msg h4 {
-    margin-left: 3rem;
-}
-
-.result-section #tryagain {
-    margin-top: 18px;
-    border-radius: 18px;
-    font-size: 1.5rem;
-    width: 10rem;
+    .quiz-section #choices {
+        margin-left: .5rem;
+        margin-right: 1rem;
+        width: 105%;
+        font-size: 10px;
+    }
+    .result-section #result_msg {
+        height: 16rem;
+    }
+    .result-section #result_msg h3,
+    .result-section #result_msg h4 {
+        margin-left: 2rem;
+    }
+    .result-section #result_msg h4 {
+        margin-left: 3rem;
+    }
+    .result-section #tryagain {
+        margin-top: 18px;
+        border-radius: 18px;
+        font-size: 1.5rem;
+        width: 10rem;
+    }
 }
 
 
-}/*
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    body {
+        color: green;
+    }
+    section {
+        width: 381px;
+        height: 320px;
+        margin-top: 15rem;
+    }
+    .start-section h1 {
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+    .start-section h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .start-section .start-button {
+        margin-top: 1rem;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        padding: .1rem .5rem;
+        width: 8rem;
+    }
+    .quiz-section {
+        height: 290px;
+        width: 375px;
+    }
+    .quiz-section #image_wrapper {
+        margin-top: .5rem;
+        margin-left: -3.5rem;
+    }
+    #image_wrapper img {
+        width: 170px;
+        height: 237px;
+    }
+    .quiz-section #question_wrapper {
+        margin-top: .5rem;
+        margin-left: -4.0rem;
+        height: 220px;
+        width: 160px;
+        font-size: 10px;
+        padding-right: -2rem;
+    }
+    .quiz-section #choices {
+        width: 117%;
+    }
+    .result-section #result_msg {
+        height: 15rem;
+    }
+    .result-section h2 {
+        margin-top: 0.4rem;
+        font-size: 18px;
+    }
+    .text {
+        padding-bottom: .1rem;
+    }
+    .result-section #result_msg h3,
+    .result-section #result_msg h4 {
+        margin-left: 2rem;
+        margin-bottom: .1rem;
+    }
+    .result-section #result_msg h4 {
+        margin-left: 3rem;
+    }
+    .result-section #tryagain {
+        font-size: 1rem;
+        width: 9rem;
+    }
+    /*
 
 /*iPhone portrait*/
-                        @media only screen and (max-width: 320px) {
-                            body {
-                                color: purple;
-                            }
-                        }
+    @media only screen and (max-width: 320px) {
+        body {
+            color: purple;
+        }
+    }
