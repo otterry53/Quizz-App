@@ -70,7 +70,7 @@ $(document).ready(function () {
         //Question 6
         {
             question: 'Which is not part of the title of a book in "The Girl . . ." Millenium Triology by Steig Larsson?',
-            choices: ['...with the Dragon Tattoo', '...who Played with Fire', '...who Leapt Through Time', '...Who Kicked the Hornets Nest', '...in the Spiders Web'],
+            choices: ['...with the Dragon Tattoo', '...who Played with Fire', '...who Leapt Through Time', '...who Kicked the Hornets Nest', '...in the Spiders Web'],
             correct: 2,
             questionImage: "https://lmiall.files.wordpress.com/2014/01/girl_with_the_dragon_tattoo.jpg",
             alt: '../images/dragontattoo.jpg',
@@ -79,7 +79,7 @@ $(document).ready(function () {
         //Question 7
         {
             question: 'Which title was not a book written by Theodore Seuss Geisel a-k-a Dr.Seuss?',
-            choices: ['Your Parachute is Red and Blue', 'Green Eggs and Ham', 'Daisy Headed Maisy', 'Oh, the Places Youll Go', 'The Lorax'],
+            choices: ['Your Parachute is Red & Blue', 'Green Eggs and Ham', 'Daisy Headed Maisy', 'Oh, the Places Youll Go', 'The Lorax'],
             correct: 0,
             questionImage: "http://img02.deviantart.net/e4f0/i/2012/059/b/d/the_cat_in_the_hat_by_odogg31-d4rbrmf.jpg",
             alt: '../images/Cat-in-the-hat.jpg',
